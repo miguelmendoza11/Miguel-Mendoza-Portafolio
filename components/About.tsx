@@ -44,26 +44,39 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="bg-white px-4 sm:px-8 md:px-16 lg:px-24 py-12 md:py-16 lg:py-20">
-
+    <section
+      id="about"
+      className="
+        bg-white
+        px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24
+        py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20
+      "
+    >
       {/* Título */}
-      <div className="flex flex-col items-center mb-10 md:mb-14">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black uppercase tracking-tight">
+      <div className="flex flex-col items-center mb-8 xs:mb-9 sm:mb-10 md:mb-12 lg:mb-14">
+        <h2 className="
+          text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl
+          font-bold text-black uppercase tracking-tight text-center
+        ">
           Acerca de mi
         </h2>
-        <div className="w-25 h-2 bg-[#FF8000] mt-3 rounded-full" />
+        <div className="w-16 h-2 bg-[#FF8000] mt-3 rounded-full" />
       </div>
 
       {/* Tarjetas */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-10">
+      <div className="
+        grid gap-3 xs:gap-4 sm:gap-5 md:gap-6
+        grid-cols-1 sm:grid-cols-3
+        mb-4 xs:mb-5 sm:mb-6 md:mb-8
+      ">
         {cards.map((card) => (
           <div
             key={card.title}
-            className="border border-gray-200 rounded-2xl p-5 md:p-6 flex flex-col gap-3 shadow-sm"
+            className="border border-gray-200 rounded-2xl p-4 xs:p-5 md:p-6 flex flex-col gap-3 shadow-sm"
           >
             {/* Icono + título */}
             <div className="flex flex-row items-center gap-3">
-              <div className="bg-[#FF8000] w-9 h-9 rounded-lg flex items-center justify-center">
+              <div className="bg-[#FF8000] w-9 h-9 rounded-lg flex items-center justify-center shrink-0">
                 {card.icon}
               </div>
               <span className="font-semibold text-sm md:text-base text-gray-800">
@@ -71,52 +84,35 @@ export default function About() {
               </span>
             </div>
             {/* Descripción */}
-            <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+            <p className="text-xs xs:text-xs sm:text-sm md:text-sm text-gray-600 leading-relaxed">
               {card.desc}
             </p>
           </div>
         ))}
       </div>
 
-       {/* Bloque de texto personal */}
-      <div className="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm">
-        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-          Me llamo Miguel Ángel Mendoza Jaramillo. Soy una persona alegre, amistosa y colaboradora,
-          con una gran disposición para trabajar en equipo y aportar ideas en los proyectos en los
-          que participo. Me gusta aprender constantemente y mejorar mis habilidades, especialmente
-          en el área del desarrollo de software.
-        </p>
-        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-          Actualmente estudio Ingeniería de Software, donde he adquirido experiencia trabajando con
-          tecnologías como Java, Python, JavaScript, Next.js y Git. He participado en el desarrollo
-          de proyectos académicos enfocados en aplicaciones web, estructuras de datos y soluciones
-          interactivas, lo que me ha permitido fortalecer mi lógica de programación y mi capacidad
-          de resolución de problemas.
-        </p>
-        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-          Además, tengo habilidades para guiar proyectos o trabajos, organizando tareas y apoyando
-          a mi equipo para alcanzar los objetivos propuestos. Me caracterizo por trabajar de forma
-          organizada, cumpliendo con los tiempos establecidos y adaptándome a diferentes entornos
-          de trabajo.
-        </p>
-        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-          Mi interés principal es desarrollarme en el área de frontend con enfoque en UX/UI, creando
-          interfaces atractivas y funcionales que mejoren la experiencia del usuario. También me
-          interesa el desarrollo de videojuegos, ya que es un campo que me motiva y en el que estoy
-          abierto a seguir aprendiendo y creciendo.
-        </p>
-        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-          Actualmente busco oportunidades de prácticas que me permitan fortalecer mis conocimientos
-          y adquirir experiencia en entornos reales, con el fin de crecer profesionalmente como
-          desarrollador.
-        </p>
-        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
-          Me caracterizo por mi compromiso, responsabilidad y motivación por seguir aprendiendo y
-          evolucionando tanto a nivel técnico como personal.
-        </p>
+      {/* Bloque de texto personal */}
+      <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 shadow-sm">
+        {[
+          "Me llamo Miguel Ángel Mendoza Jaramillo. Soy una persona alegre, amistosa y colaboradora, con una gran disposición para trabajar en equipo y aportar ideas en los proyectos en los que participo. Me gusta aprender constantemente y mejorar mis habilidades, especialmente en el área del desarrollo de software.",
+          "Actualmente estudio Ingeniería de Software, donde he adquirido experiencia trabajando con tecnologías como Java, Python, JavaScript, Next.js y Git. He participado en el desarrollo de proyectos académicos enfocados en aplicaciones web, estructuras de datos y soluciones interactivas, lo que me ha permitido fortalecer mi lógica de programación y mi capacidad de resolución de problemas.",
+          "Además, tengo habilidades para guiar proyectos o trabajos, organizando tareas y apoyando a mi equipo para alcanzar los objetivos propuestos. Me caracterizo por trabajar de forma organizada, cumpliendo con los tiempos establecidos y adaptándome a diferentes entornos de trabajo.",
+          "Mi interés principal es desarrollarme en el área de frontend con enfoque en UX/UI, creando interfaces atractivas y funcionales que mejoren la experiencia del usuario. También me interesa el desarrollo de videojuegos, ya que es un campo que me motiva y en el que estoy abierto a seguir aprendiendo y creciendo.",
+          "Actualmente busco oportunidades de prácticas que me permitan fortalecer mis conocimientos y adquirir experiencia en entornos reales, con el fin de crecer profesionalmente como desarrollador.",
+          "Me caracterizo por mi compromiso, responsabilidad y motivación por seguir aprendiendo y evolucionando tanto a nivel técnico como personal.",
+        ].map((text, i, arr) => (
+          <p
+            key={i}
+            className={`
+              text-xs xs:text-xs sm:text-sm md:text-base
+              text-gray-700 leading-relaxed
+              ${i < arr.length - 1 ? "mb-3 sm:mb-4" : ""}
+            `}
+          >
+            {text}
+          </p>
+        ))}
       </div>
- 
-
     </section>
   );
 }
