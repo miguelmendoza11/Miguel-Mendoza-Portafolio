@@ -54,7 +54,7 @@ export default function Hero() {
             className="hover:scale-110 transition-transform duration-200"
           >
             <Image
-              src="/Github.png"
+              src="/GitHub.png"
               alt="GitHub"
               width={40}
               height={40}
