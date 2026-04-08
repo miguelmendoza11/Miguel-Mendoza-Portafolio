@@ -51,7 +51,7 @@ export default function About() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black uppercase tracking-tight">
           Acerca de mi
         </h2>
-        <div className="w-16 h-1 bg-[#FF8000] mt-3 rounded-full" />
+        <div className="w-25 h-2 bg-[#FF8000] mt-3 rounded-full" />
       </div>
 
       {/* Tarjetas */}
@@ -77,7 +77,7 @@ export default function About() {
           </div>
         ))}
       </div>
-      
+
        {/* Bloque de texto personal */}
       <div className="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm">
         <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
