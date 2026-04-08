@@ -19,15 +19,15 @@ export default function Navbar() {
       <div className="flex flex-row items-center justify-between">
 
         {/* Logo: firma + nombre */}
-        <div className="flex flex-row items-center gap-2 sm:gap-3">
+        <div className="flex flex-row items-center gap-3 sm:gap-4">
           <Image
-            src="/firma.png"
+            src="/mmoscuro.png"
             alt="Firma Miguel Mendoza"
-            width={40}
-            height={28}
-            className="object-contain invert brightness-200 w-8 sm:w-10 md:w-12"
+            width={70}
+            height={50}
+            className="object-contain invert brightness-200 w-12 sm:w-14 md:w-16 lg:w-[70px]"
           />
-          <span className="text-white font-semibold text-sm sm:text-base tracking-wide">
+          <span className="text-white font-bold text-base sm:text-lg md:text-xl tracking-wide">
             Miguel Mendoza
           </span>
         </div>
