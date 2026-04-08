@@ -77,6 +77,45 @@ export default function About() {
           </div>
         ))}
       </div>
+      
+       {/* Bloque de texto personal */}
+      <div className="border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm">
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+          Me llamo Miguel Ángel Mendoza Jaramillo. Soy una persona alegre, amistosa y colaboradora,
+          con una gran disposición para trabajar en equipo y aportar ideas en los proyectos en los
+          que participo. Me gusta aprender constantemente y mejorar mis habilidades, especialmente
+          en el área del desarrollo de software.
+        </p>
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+          Actualmente estudio Ingeniería de Software, donde he adquirido experiencia trabajando con
+          tecnologías como Java, Python, JavaScript, Next.js y Git. He participado en el desarrollo
+          de proyectos académicos enfocados en aplicaciones web, estructuras de datos y soluciones
+          interactivas, lo que me ha permitido fortalecer mi lógica de programación y mi capacidad
+          de resolución de problemas.
+        </p>
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+          Además, tengo habilidades para guiar proyectos o trabajos, organizando tareas y apoyando
+          a mi equipo para alcanzar los objetivos propuestos. Me caracterizo por trabajar de forma
+          organizada, cumpliendo con los tiempos establecidos y adaptándome a diferentes entornos
+          de trabajo.
+        </p>
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+          Mi interés principal es desarrollarme en el área de frontend con enfoque en UX/UI, creando
+          interfaces atractivas y funcionales que mejoren la experiencia del usuario. También me
+          interesa el desarrollo de videojuegos, ya que es un campo que me motiva y en el que estoy
+          abierto a seguir aprendiendo y creciendo.
+        </p>
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+          Actualmente busco oportunidades de prácticas que me permitan fortalecer mis conocimientos
+          y adquirir experiencia en entornos reales, con el fin de crecer profesionalmente como
+          desarrollador.
+        </p>
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+          Me caracterizo por mi compromiso, responsabilidad y motivación por seguir aprendiendo y
+          evolucionando tanto a nivel técnico como personal.
+        </p>
+      </div>
+ 
 
     </section>
   );
