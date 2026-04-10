@@ -23,10 +23,11 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex flex-row items-center gap-3 sm:gap-4">
           <Image
-            src="/firma.png"
+            src="/mmoscuro.png"
             alt="Firma Miguel Mendoza"
             width={70}
             height={50}
+            style={{ height: "auto" }}
             className="object-contain invert brightness-200 w-12 sm:w-14 md:w-16 lg:w-[70px]"
           />
           <span className="text-white font-bold text-base sm:text-lg md:text-xl tracking-wide">
