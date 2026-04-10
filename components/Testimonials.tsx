@@ -21,7 +21,7 @@ export default function Testimonials() {
     <section
       id="testimonials"
       className="
-        bg-[#D9D9D9]
+        bg-[#D9D9D9]/20
         px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24
         py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20
       "
