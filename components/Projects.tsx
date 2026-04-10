@@ -66,7 +66,7 @@ export default function Projects() {
             </div>
 
             {/* Descripción */}
-            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed flex-1">
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed flex-1 text-center">
               {project.desc}
             </p>
 
