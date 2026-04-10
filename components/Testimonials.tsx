@@ -52,8 +52,8 @@ export default function Testimonials() {
             {/* Separador + nombre */}
             <div>
               <div className="w-full h-px bg-gray-200 mb-3" />
-              <p className="text-xs sm:text-sm font-semibold text-gray-800">{t.name}</p>
-              <p className="text-xs text-gray-500">{t.role}</p>
+              <p className="text-xs sm:text-sm font-semibold text-gray-800 text-center">{t.name}</p>
+              <p className="text-xs text-gray-500 text-center">{t.role}</p>
             </div>
           </div>
         ))}
