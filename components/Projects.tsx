@@ -47,7 +47,7 @@ export default function Projects() {
       </div>
 
       {/* Subtítulo */}
-      <p className="text-center text-xs xs:text-sm sm:text-base text-gray-500 mb-8 sm:mb-10 md:mb-12">
+      <p className="text-center text-xs xs:text-sm sm:text-base text-gray-500 mb-12 sm:mb-14 md:mb-16">
         Algunos de los proyectos que he desarrollado durante mi formación académica
       </p>
 
@@ -75,7 +75,7 @@ export default function Projects() {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-row items-center gap-2 bg-[#FF8000] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold hover:bg-orange-600 transition-colors duration-200 w-fit"
+              className="flex flex-row items-center gap-2 bg-[#FF8000] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold hover:bg-orange-600 transition-colors duration-200 w-fit mx-auto"
             >
               <IconGithub />
               Código
