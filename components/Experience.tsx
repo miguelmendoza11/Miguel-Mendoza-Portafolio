@@ -51,11 +51,11 @@ export default function Experience() {
         {t("experience.subtitle")}
       </p>
 
-      {/* Grid educación + laboral */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      {/* Grid educación + laboral - items-stretch para igual altura */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
 
         {/* Educación */}
-        <div>
+        <div className="flex flex-col">
           <div className="flex flex-row items-center gap-3 mb-4">
             <div className="bg-[#FF8000] w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
               <IconEducation />
@@ -65,7 +65,7 @@ export default function Experience() {
             </span>
           </div>
 
-          <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 md:p-6 shadow-sm">
+          <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 md:p-6 shadow-sm flex-1">
             {/* Carrera */}
             <div className="flex flex-row items-start gap-2 mb-3">
               <span className="text-[#FF8000] mt-1">●</span>
@@ -88,14 +88,14 @@ export default function Experience() {
             {["experience.course1", "experience.course2", "experience.course3"].map((key) => (
               <div key={key} className="flex flex-row items-center gap-2 mb-1">
                 <span className="text-[#FF8000] text-xs">●</span>
-                <span className="text-xs text-gray-600">{t(key)}</span>
+                <span className="text-sm text-gray-600">{t(key)}</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Experiencia Laboral */}
-        <div>
+        <div className="flex flex-col">
           <div className="flex flex-row items-center gap-3 mb-4">
             <div className="bg-[#FF8000] w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
               <IconBriefcase />
@@ -105,7 +105,7 @@ export default function Experience() {
             </span>
           </div>
 
-          <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 md:p-6 shadow-sm flex flex-col items-center justify-center min-h-[200px] gap-3">
+          <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 md:p-6 shadow-sm flex-1 flex flex-col items-center justify-center gap-3">
             <div className="bg-[#FF8000] w-14 h-14 rounded-full flex items-center justify-center">
               <IconBriefcase />
             </div>
