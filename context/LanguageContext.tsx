@@ -64,6 +64,7 @@ const translations = {
     "experience.course3": "Diseño de Software",
     "experience.seeking": "En busca de oportunidades",
     "experience.seekingDesc": "Actualmente buscando prácticas profesionales para aplicar y fortalecer mis conocimientos en desarrollo de software",
+    "tech.title": "Tecnologías que manejo",
   },
   en: {
     "nav.about": "About me",
@@ -118,6 +119,7 @@ const translations = {
     "experience.course3": "Software Design",
     "experience.seeking": "Seeking opportunities",
     "experience.seekingDesc": "Currently looking for professional internships to apply and strengthen my knowledge in software development",
+    "tech.title": "Technologies I know",
   },
 };
 
