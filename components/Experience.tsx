@@ -43,7 +43,7 @@ export default function Experience() {
         <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-black uppercase tracking-tight text-center">
           {t("experience.title")}
         </h2>
-        <div className="w-16 h-2 bg-[#FF8000] mt-3 rounded-full" />
+        <div className="w-16 h-2 bg-[#FF8000] mt-3 rounded-full shadow-[0px_4px_6px_rgba(255,128,0,0.5)]" />
       </div>
 
       {/* Subtítulo */}
