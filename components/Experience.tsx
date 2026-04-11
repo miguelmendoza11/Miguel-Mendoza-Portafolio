@@ -70,10 +70,10 @@ export default function Experience() {
             <div className="flex flex-row items-start gap-2 mb-3">
               <span className="text-[#FF8000] mt-1">●</span>
               <div>
-                <p className="font-semibold text-xs sm:text-sm text-gray-800">
+                <p className="font-semibold text-sm sm:text-base text-gray-800">
                   {t("experience.degree")}
                 </p>
-                <p className="text-xs text-gray-500">{t("experience.university")}</p>
+                <p className="text-sm text-gray-500">{t("experience.university")}</p>
               </div>
             </div>
 
@@ -84,7 +84,7 @@ export default function Experience() {
             </div>
 
             {/* Cursos */}
-            <p className="text-xs font-semibold text-gray-700 mb-2">{t("experience.courses")}</p>
+            <p className="text-sm font-semibold text-gray-700 mb-2">{t("experience.courses")}</p>
             {["experience.course1", "experience.course2", "experience.course3"].map((key) => (
               <div key={key} className="flex flex-row items-center gap-2 mb-1">
                 <span className="text-[#FF8000] text-xs">●</span>
