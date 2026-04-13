@@ -82,6 +82,8 @@ const translations = {
     "contact.form.message": "Mensaje",
     "contact.form.messagePlaceholder": "Cuéntame sobre tu proyecto o propuesta...",
     "contact.form.send": "ENVIAR MENSAJE",
+    "footer.desc": "Estudiante de Ingeniería de Software apasionado por crear soluciones tecnológicas innovadoras.",
+    "footer.copyright": "© 2026 Miguel Mendoza. Todos los derechos reservados.",
   },
   en: {
     "nav.about": "About me",
@@ -154,6 +156,8 @@ const translations = {
     "contact.form.message": "Message",
     "contact.form.messagePlaceholder": "Tell me about your project or proposal...",
     "contact.form.send": "SEND MESSAGE",
+    "footer.desc": "Software Engineering student passionate about creating innovative technological solutions.",
+    "footer.copyright": "© 2026 Miguel Mendoza. All rights reserved.",
   },
 };
 
