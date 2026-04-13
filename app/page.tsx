@@ -8,20 +8,37 @@ import Technologies from "@/components/Technologies";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <About />
-      <Projects />
-      <Testimonials />
-      <Experience />
-      <Technologies />
-      <Skills />
-      <Contact />
-      <Footer />
+      <ScrollReveal direction="up">
+        <About />
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={100}>
+        <Projects />
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={100}>
+        <Testimonials />
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={100}>
+        <Experience />
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={100}>
+        <Technologies />
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={100}>
+        <Skills />
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={100}>
+        <Contact />
+      </ScrollReveal>
+      <ScrollReveal direction="up" delay={100}>
+        <Footer />
+      </ScrollReveal>
     </main>
   );
 }
