@@ -30,7 +30,7 @@ export default function Footer() {
           <p className="font-bold text-sm sm:text-base text-gray-800 uppercase tracking-wide">
             Miguel Mendoza
           </p>
-          <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+          <p className="text-xs sm:text-sm font-bold text-gray-800 leading-relaxed">
             {t("footer.desc")}
           </p>
         </div>
