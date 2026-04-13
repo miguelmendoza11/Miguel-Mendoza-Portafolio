@@ -27,7 +27,7 @@ export default function Technologies() {
       <div className="flex flex-col items-center mb-6 xs:mb-7 sm:mb-8 md:mb-10 px-4">
         <h3 className="
           text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl
-          font-bold text-gray-700 text-center
+          font-bold text-[#FF8000] text-center
         ">
           {t("tech.title")}
         </h3>

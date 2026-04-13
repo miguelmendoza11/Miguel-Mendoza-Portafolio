@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col items-center justify-center text-center px-4 py-8 sm:py-10 md:py-14 lg:py-16 bg-white min-h-[calc(100vh-80px)]">
-      <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden mb-5 md:mb-7 lg:mb-8">
+      <div className="w-32 h-32 xs:w-36 xs:h-36 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden mb-5 md:mb-7 lg:mb-8">
         <Image src="/fotoPerfil.jpeg" alt="Foto de perfil Miguel Mendoza" width={160} height={160} className="object-cover w-full h-full" />
       </div>
       <h1 className="text-[2rem] sm:text-[2.8rem] md:text-[4rem] lg:text-[5.5rem] xl:text-[6.5rem] font-bold text-black uppercase leading-none tracking-tight mb-4 md:mb-5 lg:mb-6">
