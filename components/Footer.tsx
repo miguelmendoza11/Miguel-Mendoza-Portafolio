@@ -23,10 +23,13 @@ export default function Footer() {
     <footer className="bg-[#D9D9D9]/25 border-t border-[#D9D9D9]">
 
       {/* Contenido principal */}
-      <div className="px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-8 sm:py-10 md:py-12 flex flex-col sm:flex-row justify-between gap-8 sm:gap-4">
-
-        {/* Izquierda — nombre y descripción */}
-        <div className="flex flex-col gap-3 max-w-xs">
+      <div className="
+        px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24
+        py-6 xs:py-7 sm:py-8 md:py-10 lg:py-12
+        flex flex-col sm:flex-row justify-between gap-6 sm:gap-4
+      ">
+        {/* Izquierda */}
+        <div className="flex flex-col gap-2 xs:gap-3 max-w-xs">
           <p className="font-bold text-sm sm:text-base text-gray-800 uppercase tracking-wide">
             Miguel Mendoza
           </p>
@@ -36,25 +39,24 @@ export default function Footer() {
         </div>
 
         {/* Derecha — links */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2 xs:gap-3">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-row items-center justify-end gap-2 text-xs sm:text-sm text-gray-600 hover:text-[#FF8000] transition-colors duration-200 group"
+              className="flex flex-row items-center justify-start sm:justify-end gap-2 text-xs sm:text-sm text-gray-600 hover:text-[#FF8000] transition-colors duration-200"
             >
               <span>{link.label}</span>
               <IconArrowUpRight />
             </a>
           ))}
         </div>
-
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-[#D9D9D9]/60 px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-4">
+      <div className="border-t border-[#D9D9D9]/60 px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-3 xs:py-4">
         <p className="text-xs text-gray-400">
           {t("footer.copyright")}
         </p>
