@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <ScrollReveal direction="up" delay={100}>
         <Footer />
       </ScrollReveal>
+      <ScrollToTop />
     </main>
   );
 }
