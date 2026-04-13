@@ -25,10 +25,10 @@ export default function Navbar() {
           <Image
             src="/mmoscuro.png"
             alt="Firma Miguel Mendoza"
-            width={70}
-            height={50}
+            width={120}
+            height={80}
             style={{ height: "auto" }}
-            className="object-contain invert brightness-200 w-12 sm:w-14 md:w-16 lg:w-[70px]"
+            className="object-contain invert brightness-200 w-16 sm:w-20 md:w-24 lg:w-[100px]"
           />
           <span className="text-white font-bold text-base sm:text-lg md:text-xl tracking-wide">
             Miguel Mendoza
