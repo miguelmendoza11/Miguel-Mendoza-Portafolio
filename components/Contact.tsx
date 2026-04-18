@@ -2,7 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { useLanguage } from "@/context/LanguageContext";
+
+const SERVICE_ID = "service_1yf6yut";
+const TEMPLATE_ID = "template_7rskus3";
+const PUBLIC_KEY = "CjhZPs5QnQrJeeBeH";
 
 const IconMail = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -31,18 +36,39 @@ const IconSend = () => (
   </svg>
 );
 
+type Status = "idle" | "sending" | "success" | "error";
+
 export default function Contact() {
   const { t } = useLanguage();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState<Status>("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = () => {
-    const subject = encodeURIComponent("Contacto desde portafolio");
-    const body = encodeURIComponent(`Nombre: ${form.name}\nEmail: ${form.email}\n\nMensaje:\n${form.message}`);
-    window.open(`mailto:miguelangel11230@gmail.com?subject=${subject}&body=${body}`);
+  const handleSubmit = async () => {
+    if (!form.name || !form.email || !form.message) {
+      alert(t("contact.form.required"));
+      return;
+    }
+    setStatus("sending");
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        },
+        PUBLIC_KEY
+      );
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
   };
 
   const contactInfo = [
@@ -72,13 +98,11 @@ export default function Contact() {
         {t("contact.subtitle")}
       </p>
 
-      {/* Grid — 1 col móvil, 2 col desktop */}
+      {/* Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 xs:gap-5 sm:gap-6 md:gap-8">
 
         {/* Columna izquierda */}
         <div className="flex flex-col gap-4 xs:gap-5">
-
-          {/* Información de contacto */}
           <div className="border border-gray-200 rounded-2xl p-3 xs:p-4 sm:p-5 md:p-6 shadow-sm">
             <h3 className="font-bold text-sm sm:text-base md:text-lg text-[#FF8000] mb-3 sm:mb-4">
               {t("contact.info")}
@@ -108,7 +132,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* ¿Por qué contactarme? */}
           <div className="border border-gray-200 rounded-2xl p-3 xs:p-4 sm:p-5 md:p-6 shadow-sm">
             <h3 className="font-bold text-sm sm:text-base text-gray-800 mb-2 sm:mb-3">
               {t("contact.why")}
@@ -122,10 +145,9 @@ export default function Contact() {
               ))}
             </div>
           </div>
-
         </div>
 
-        {/* Columna derecha — formulario */}
+        {/* Formulario */}
         <div className="border border-gray-200 rounded-2xl p-3 xs:p-4 sm:p-5 md:p-6 shadow-sm flex flex-col gap-3 xs:gap-4">
           <h3 className="font-bold text-sm sm:text-base md:text-lg text-gray-800">
             {t("contact.form.title")}
@@ -167,12 +189,26 @@ export default function Contact() {
             />
           </div>
 
+          {/* Mensaje de estado */}
+          {status === "success" && (
+            <p className="text-xs sm:text-sm text-green-600 font-semibold text-center">
+              {t("contact.form.success")}
+            </p>
+          )}
+          {status === "error" && (
+            <p className="text-xs sm:text-sm text-red-500 font-semibold text-center">
+              {t("contact.form.error")}
+            </p>
+          )}
+
           <button
             onClick={handleSubmit}
-            className="flex flex-row items-center justify-center gap-2 bg-[#FF8000] text-white px-4 xs:px-6 py-2.5 xs:py-3 rounded-xl font-bold text-xs sm:text-sm hover:bg-orange-600 transition-colors duration-200 w-full mt-1"
+            disabled={status === "sending"}
+            className={`flex flex-row items-center justify-center gap-2 text-white px-4 xs:px-6 py-2.5 xs:py-3 rounded-xl font-bold text-xs sm:text-sm transition-colors duration-200 w-full mt-1
+              ${status === "sending" ? "bg-orange-300 cursor-not-allowed" : "bg-[#FF8000] hover:bg-orange-600"}`}
           >
             <IconSend />
-            {t("contact.form.send")}
+            {status === "sending" ? t("contact.form.sending") : t("contact.form.send")}
           </button>
         </div>
 
