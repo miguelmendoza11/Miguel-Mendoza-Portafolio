@@ -27,7 +27,7 @@ export default function Technologies() {
   return (
     <section className="bg-[#D9D9D9]/25 py-8 xs:py-9 sm:py-10 md:py-12 lg:py-14 xl:py-16 overflow-hidden">
 
-      {/* Título */}
+      {/* Títle */}
       <div className="flex flex-col items-center mb-6 xs:mb-7 sm:mb-8 md:mb-10 px-4">
         <h3 className="
           text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl
@@ -37,7 +37,7 @@ export default function Technologies() {
         </h3>
       </div>
 
-      {/* Carrusel infinito */}
+      {/* infinite carousel */}
       <div className="relative w-full overflow-hidden">
         <div className="flex animate-marquee whitespace-nowrap">
           {doubled.map((tech, i) => (
