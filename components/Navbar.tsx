@@ -65,7 +65,6 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Botón tema */}
           <button
             onClick={toggleTheme}
             className="ml-2 w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-all duration-200"
@@ -74,7 +73,6 @@ export default function Navbar() {
             {theme === "light" ? <IconMoon /> : <IconSun />}
           </button>
 
-          {/* Botón idioma */}
           <button
             onClick={toggleLang}
             className="ml-2 w-9 h-9 rounded-full overflow-hidden border-2 border-white hover:scale-110 transition-transform duration-200"
@@ -91,9 +89,9 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Botones móvil */}
+
         <div className="lg:hidden flex flex-row items-center gap-2 sm:gap-3">
-          {/* Botón tema móvil */}
+
           <button
             onClick={toggleTheme}
             className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-all duration-200"
@@ -102,7 +100,7 @@ export default function Navbar() {
             {theme === "light" ? <IconMoon /> : <IconSun />}
           </button>
 
-          {/* Botón idioma móvil */}
+
           <button
             onClick={toggleLang}
             className="w-8 h-8 rounded-full overflow-hidden border-2 border-white hover:scale-110 transition-transform duration-200"
@@ -128,7 +126,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Menú desplegable móvil */}
+
       {menuOpen && (
         <ul className="lg:hidden flex flex-col mt-3 text-white text-sm font-medium">
           {links.map((item) => (

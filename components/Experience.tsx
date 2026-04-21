@@ -38,7 +38,7 @@ export default function Experience() {
       id="experience"
       className="bg-white px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20"
     >
-      {/* Título */}
+
       <div className="flex flex-col items-center mb-4 sm:mb-6">
         <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-black uppercase tracking-tight text-center">
           {t("experience.title")}
@@ -46,15 +46,15 @@ export default function Experience() {
         <div className="w-16 h-2 bg-[#FF8000] mt-3 rounded-full shadow-[0px_4px_6px_rgba(255,128,0,0.5)]" />
       </div>
 
-      {/* Subtítulo */}
+
       <p className="text-center text-xs xs:text-sm sm:text-base text-gray-500 mb-10 sm:mb-12 md:mb-14">
         {t("experience.subtitle")}
       </p>
 
-      {/* Grid educación + laboral - items-stretch para igual altura */}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
 
-        {/* Educación */}
+
         <div className="flex flex-col">
           <div className="flex flex-row items-center gap-3 mb-4">
             <div className="bg-[#FF8000] w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
@@ -66,7 +66,7 @@ export default function Experience() {
           </div>
 
           <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 md:p-6 shadow-sm flex-1">
-            {/* Carrera */}
+
             <div className="flex flex-row items-start gap-2 mb-3">
               <span className="text-[#FF8000] mt-1">●</span>
               <div>
@@ -77,13 +77,12 @@ export default function Experience() {
               </div>
             </div>
 
-            {/* Fecha */}
+            {/* Date */}
             <div className="flex flex-row items-center gap-2 mb-3">
               <IconCalendar />
               <span className="text-xs text-gray-500">2023 - {t("experience.present")}</span>
             </div>
 
-            {/* Cursos */}
             <p className="text-sm font-semibold text-gray-700 mb-2">{t("experience.courses")}</p>
             {["experience.course1", "experience.course2", "experience.course3"].map((key) => (
               <div key={key} className="flex flex-row items-center gap-2 mb-1">
@@ -94,7 +93,7 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Experiencia Laboral */}
+        {/* Work Experience */}
         <div className="flex flex-col">
           <div className="flex flex-row items-center gap-3 mb-4">
             <div className="bg-[#FF8000] w-10 h-10 rounded-xl flex items-center justify-center shrink-0">
