@@ -56,11 +56,14 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-[#D9D9D9]/60 px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-3 xs:py-4">
-        <p className="text-xs text-gray-400">
-          {t("footer.copyright")}
-        </p>
-      </div>
+      <div className="border-t border-[#D9D9D9]/60 px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-3 xs:py-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+  <p className="text-xs text-gray-400">
+    {t("footer.copyright")}
+  </p>
+  <p className="text-xs text-gray-400">
+    Built with Next.js · TypeScript · Tailwind CSS · JavaScript · CSS
+  </p>
+</div>
 
     </footer>
   );
