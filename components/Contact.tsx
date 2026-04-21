@@ -85,7 +85,7 @@ export default function Contact() {
       id="contact"
       className="bg-white px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20"
     >
-      {/* Título */}
+      {/* Title */}
       <div className="flex flex-col items-center mb-4 xs:mb-5 sm:mb-6">
         <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-black uppercase tracking-tight text-center">
           {t("contact.title")}
@@ -93,7 +93,6 @@ export default function Contact() {
         <div className="w-16 h-2 bg-[#FF8000] mt-3 rounded-full" />
       </div>
 
-      {/* Subtítulo */}
       <p className="text-center text-xs xs:text-sm sm:text-base text-gray-500 mb-6 xs:mb-8 sm:mb-10 md:mb-12">
         {t("contact.subtitle")}
       </p>
@@ -101,7 +100,6 @@ export default function Contact() {
       {/* Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 xs:gap-5 sm:gap-6 md:gap-8">
 
-        {/* Columna izquierda */}
         <div className="flex flex-col gap-4 xs:gap-5">
           <div className="border border-gray-200 rounded-2xl p-3 xs:p-4 sm:p-5 md:p-6 shadow-sm">
             <h3 className="font-bold text-sm sm:text-base md:text-lg text-[#FF8000] mb-3 sm:mb-4">
@@ -147,7 +145,6 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Formulario */}
         <div className="border border-gray-200 rounded-2xl p-3 xs:p-4 sm:p-5 md:p-6 shadow-sm flex flex-col gap-3 xs:gap-4">
           <h3 className="font-bold text-sm sm:text-base md:text-lg text-gray-800">
             {t("contact.form.title")}
@@ -189,7 +186,6 @@ export default function Contact() {
             />
           </div>
 
-          {/* Mensaje de estado */}
           {status === "success" && (
             <p className="text-xs sm:text-sm text-green-600 font-semibold text-center">
               {t("contact.form.success")}

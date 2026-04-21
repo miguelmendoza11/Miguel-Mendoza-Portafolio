@@ -22,13 +22,13 @@ export default function Footer() {
   return (
     <footer className="bg-[#D9D9D9]/25 border-t border-[#D9D9D9]">
 
-      {/* Contenido principal */}
+      {/* Main content */}
       <div className="
         px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24
         py-6 xs:py-7 sm:py-8 md:py-10 lg:py-12
         flex flex-col sm:flex-row justify-between gap-6 sm:gap-4
       ">
-        {/* Izquierda */}
+        {/* Left */}
         <div className="flex flex-col gap-2 xs:gap-3 max-w-xs">
           <p className="font-bold text-sm sm:text-base text-gray-800 uppercase tracking-wide">
             Miguel Mendoza
@@ -38,7 +38,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Derecha — links */}
+        {/* Right — links */}
         <div className="flex flex-col gap-2 xs:gap-3">
           {links.map((link) => (
             <a
