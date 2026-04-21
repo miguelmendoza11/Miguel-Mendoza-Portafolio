@@ -13,6 +13,10 @@ const techs = [
   "<GITHUB>",
   "<NEXT.JS>",
   "<TYPESCRIPT>",
+  "<MySQL>",
+  "<MONGODB>",
+  "<postgreSQL>",
+  "<Django>",
 ];
 
 export default function Technologies() {
