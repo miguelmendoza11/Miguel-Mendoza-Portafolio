@@ -166,3 +166,8 @@ body::-webkit-scrollbar-thumb {
 .dark .border-\[\#D9D9D9\] {
   border-color: #2a2a2a !important;
 }
+
+/* Offset para navbar fijo */
+section[id] {
+  scroll-margin-top: 90px;
+}
