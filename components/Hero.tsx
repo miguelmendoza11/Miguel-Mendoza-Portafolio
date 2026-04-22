@@ -40,10 +40,10 @@ export default function Hero() {
 
       <div className="flex flex-row items-center justify-center gap-6 sm:gap-10 md:gap-14 lg:gap-16 mb-6 md:mb-8">
         <a href="https://github.com/miguelmendoza11" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200">
-          <Image src="/GitHub.png" alt="GitHub" width={40} height={40} className="object-contain drop-shadow-[2px_2px_3px_rgba(255,128,0,0.6)] w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-[52px] lg:h-[52px]" />
+          <Image src="/GitHub.png" alt="GitHub" width={40} height={40} className="object-contain drop-shadow-[2px_2px_3px_rgba(255,128,0,0.6)] w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-[52px] lg:h-[52px] dark:invert" />
         </a>
         <a href="https://linkedin.com/in/miguel-mendoza-070829311" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200">
-          <Image src="/linkedi.png" alt="LinkedIn" width={40} height={40} className="object-contain drop-shadow-[2px_2px_3px_rgba(255,128,0,0.6)] w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-[52px] lg:h-[52px]" />
+          <Image src="/linkedi.png" alt="LinkedIn" width={40} height={40} className="object-contain drop-shadow-[2px_2px_3px_rgba(255,128,0,0.6)] w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-[52px] lg:h-[52px] dark:invert" />
         </a>
         <a href="mailto:miguelangel11230@gmail.com" className="hover:scale-110 transition-transform duration-200">
           <Image src="/gmail.png" alt="Gmail" width={40} height={40} className="object-contain drop-shadow-[2px_2px_3px_rgba(255,128,0,0.6)] w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-[52px] lg:h-[52px]" />
@@ -51,6 +51,7 @@ export default function Hero() {
       </div>
 
       <div className="w-50 h-2 bg-[#FF8000] rounded-full mb-8 md:mb-10" />
+
 
       <div className="flex flex-row items-center justify-center gap-4 sm:gap-6">
         <a href="#contact" className="bg-[#FF8000] text-white rounded-full font-semibold hover:bg-orange-600 transition-colors duration-200 whitespace-nowrap text-[10px] px-4 py-1.5 sm:text-xs sm:px-5 sm:py-2 md:text-sm md:px-6 md:py-2 lg:px-7 lg:py-2.5">
