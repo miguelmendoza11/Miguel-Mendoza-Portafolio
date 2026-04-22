@@ -52,7 +52,6 @@ export default function Navbar() {
           </span>
         </div>
 
-        {/* Links escritorio + botones */}
         <div className="hidden lg:flex flex-row items-center gap-2">
           <ul className="flex flex-row items-center text-white text-sm font-medium">
             {links.map((item, index, arr) => (
