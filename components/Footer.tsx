@@ -60,9 +60,7 @@ export default function Footer() {
   <p className="text-xs text-gray-400">
     {t("footer.copyright")}
   </p>
-  <p className="text-xs text-gray-400">
-    Built with Next.js · TypeScript · Tailwind CSS · JavaScript · CSS
-  </p>
+
 </div>
 
     </footer>

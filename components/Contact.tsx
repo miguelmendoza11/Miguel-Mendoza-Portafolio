@@ -116,7 +116,7 @@ export default function Contact() {
                 >
                   <div className="bg-[#FF8000] w-8 h-8 xs:w-9 xs:h-9 rounded-lg flex items-center justify-center shrink-0">
                     {item.img ? (
-                      <Image src={item.img} alt={item.label} width={20} height={20} className="object-contain" />
+                      <Image src={item.img} alt={item.label} width={20} height={20} className="object-contain brightness-0 invert" />
                     ) : (
                       item.icon
                     )}
