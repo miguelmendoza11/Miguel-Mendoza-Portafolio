@@ -10,7 +10,7 @@ export default function Hero() {
     <section className="relative flex flex-col items-center justify-center text-center px-4 py-8 sm:py-10 md:py-14 lg:py-16 bg-white min-h-[calc(100vh-80px)]">
 
       <div className="w-32 h-32 xs:w-36 xs:h-36 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden mb-5 md:mb-7 lg:mb-8">
-        <Image src="/fotoPerfil.jpeg" alt="Foto de perfil Miguel Mendoza" width={160} height={160} className="object-cover w-full h-full" />
+        <Image src="/nequiImagen.jpeg" alt="Foto de perfil Miguel Mendoza" width={160} height={160} className="object-cover w-full h-full" />
       </div>
 
       <h1 className="text-[2rem] sm:text-[2.8rem] md:text-[4rem] lg:text-[5.5rem] xl:text-[6.5rem] font-bold text-black uppercase leading-none tracking-tight mb-4 md:mb-5 lg:mb-6">
@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Indicador de scroll animado */}
+
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce">
         <span className="text-xs text-gray-400 tracking-widest uppercase">scroll</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF8000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
