@@ -64,6 +64,7 @@ export default function About() {
         ))}
       </div>
 
+      {/* Contenedor texto + imagen */}
       <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 shadow-sm">
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
 
@@ -75,7 +76,7 @@ export default function About() {
           </div>
 
           {/* Imagen derecha */}
-          <div className="w-full md:w-64 lg:w-72 shrink-0">
+          <div className="w-full md:w-48 lg:w-56 shrink-0">
             <div className="rounded-2xl overflow-hidden border-4 border-[#FF8000] shadow-lg">
               <Image
                 src="/fotico.jpeg"
