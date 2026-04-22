@@ -38,11 +38,10 @@ export default function About() {
     { icon: <IconTarget />, titleKey: "about.card3.title", descKey: "about.card3.desc" },
   ];
 
-  const paragraphs = ["about.p1","about.p2","about.p3","about.p4","about.p5","about.p6"];
-
   return (
     <section id="about" className="bg-white px-4 xs:px-5 sm:px-8 md:px-12 lg:px-20 xl:px-24 py-8 xs:py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
 
+      {/* Título */}
       <div className="flex flex-col items-center mb-8 xs:mb-9 sm:mb-10 md:mb-12 lg:mb-14">
         <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-black uppercase tracking-tight text-center">
           {t("about.title")}
@@ -50,6 +49,7 @@ export default function About() {
         <div className="w-16 h-2 bg-[#FF8000] mt-3 rounded-full" />
       </div>
 
+      {/* Tarjetas */}
       <div className="grid gap-3 xs:gap-4 sm:gap-5 md:gap-6 grid-cols-1 sm:grid-cols-3 mb-6 md:mb-8">
         {cards.map((card) => (
           <div key={card.titleKey} className="border border-gray-200 rounded-2xl p-4 xs:p-5 md:p-6 flex flex-col gap-3 shadow-sm">
@@ -65,28 +65,29 @@ export default function About() {
       </div>
 
       <div className="border border-gray-200 rounded-2xl p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 shadow-sm">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
 
-        
-        <div className="flex flex-col items-center mb-6">
-          <div className="w-36 h-36 xs:w-40 xs:h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-4 border-[#FF8000] shadow-lg">
-            <Image
-              src="/nequiImagen.jpeg"
-              alt="Miguel Mendoza en Nequi"
-              width={224}
-              height={224}
-              className="w-full h-full object-cover object-top"
-            />
+          {/* Texto izquierda */}
+          <div className="flex-1">
+            <p className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">
+              {t("about.summary")}
+            </p>
           </div>
-          
+
+          {/* Imagen derecha */}
+          <div className="w-full md:w-64 lg:w-72 shrink-0">
+            <div className="rounded-2xl overflow-hidden border-4 border-[#FF8000] shadow-lg">
+              <Image
+                src="/fotico.jpeg"
+                alt="Miguel Mendoza en Nequi"
+                width={300}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
         </div>
-
-        <div className="w-full h-px bg-gray-100 mb-6" />
-
-        {paragraphs.map((key, i) => (
-          <p key={key} className={`text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed ${i < paragraphs.length - 1 ? "mb-3 sm:mb-4" : ""}`}>
-            {t(key)}
-          </p>
-        ))}
       </div>
 
     </section>
